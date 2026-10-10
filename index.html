@@ -70,7 +70,7 @@
             </h1>
             
             <p class="text-lg sm:text-xl text-slate-700 max-w-3xl mx-auto font-medium leading-relaxed">
-                Give your child the best of home <span class="bg-emerald-300/60 px-2 py-0.5 rounded-md font-semibold">comfort interactivity</span> — no <span class="text-red-500 underline decoration-wavy">boring lectures</span> lectures, no <span class="text-red-500 underline decoration-wavy">stressful commutes</span>.
+                Give your child the best of home <span class="bg-emerald-300/60 px-2 py-0.5 rounded-md font-semibold">comfort interactivity</span> — no <span class="text-red-500 underline decoration-wavy">boring lectures</span>, no <span class="text-red-500 underline decoration-wavy">stressful commutes</span>.
             </p>
 
             <div class="flex items-center justify-center gap-4 pt-4">
@@ -442,6 +442,11 @@
 
     <!-- Scripts -->
     <script>
+        // Initialize Lucide icons if any
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+
         // Shrinking Floating Navbar on Scroll
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
@@ -474,4 +479,3 @@
     </script>
 </body>
 </html>
-
